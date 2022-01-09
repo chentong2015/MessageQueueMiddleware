@@ -6,7 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MessageQueueMiddleware" />
+        <module name="JavaMessageService" />
+        <module name="RabbitMQ" />
+        <module name="ApacheKafKa" />
+        <module name="ApacheRocketMQ" />
+        <module name="ApacheActiveMQ" />
       </profile>
     </annotationProcessing>
   </component>
