@@ -9,10 +9,10 @@ package main;
 
 // RabbitMQ服务器是用Erlang语言(高性能、健壮以及可伸缩性)编写
 // RabbitMQ实现了"分布式的定时任务调度器"
-public class BaseRabbitMQ {
 
-    // 教程运用:
-    // https://www.rabbitmq.com/getstarted.html
-    // https://github.com/rabbitmq/rabbitmq-tutorials
-    // https://spring.io/guides/gs/messaging-rabbitmq/
+// 理解背后的逻辑 + 源码的实现
+// https://www.rabbitmq.com/getstarted.html
+// https://github.com/rabbitmq/rabbitmq-tutorials
+public class BaseRabbitMQ {
+    
 }
