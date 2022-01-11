@@ -57,6 +57,14 @@
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- 配置嵌套的Web Container的依赖
+             启动ServletWebServerApplicationContext -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>9.0.54</version>
+        </dependency>
     </dependencies>
 
     <properties>

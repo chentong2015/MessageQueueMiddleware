@@ -8,35 +8,45 @@ import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
 import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
+@EnableWebMvc
 public class SpringMessagingConfig implements WebMvcConfigurer {
 
-    private final String queueName = "spring-messaging";
+    // 通过系统Application配置文件动态设置信息
+    @Value("${spring.rabbitmq.name}")
+    private String queueName;
 
-    // Creates an AMQP queue
+    @Value("${spring.rabbitmq.exchange}")
+    private String topicName;
+
+    @Value("${spring.rabbitmq.routingkey}")
+    private String routingKey;
+
     @Bean
     Queue queue() {
         return new Queue(queueName, false);
     }
 
-    // Creates a topic exchange
     @Bean
     TopicExchange exchange() {
-        return new TopicExchange("topic-exchange");
+        return new TopicExchange(topicName);
     }
 
     // 绑定创建的指定队列和消息的主题，key键值确保发送和接收消息的准确性
     // Any messages sent with a routing key that begins with "com.tong" are routed to the queue
     @Bean
     Binding binding(Queue queue, TopicExchange exchange) {
-        return BindingBuilder.bind(queue).to(exchange).with("com.tong.#");
+        return BindingBuilder.bind(queue).to(exchange).with(routingKey);
     }
 
-    // TODO: MessageListenerContainer and Receiver beans are all you need to listen for messages
+    // TODO: 使用的是默认的配置信息
+    //  MessageListenerContainer and Receiver beans are all you need to listen for messages
     @Bean
     SimpleMessageListenerContainer container(ConnectionFactory connectionFactory, MessageListenerAdapter listenerAdapter) {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
