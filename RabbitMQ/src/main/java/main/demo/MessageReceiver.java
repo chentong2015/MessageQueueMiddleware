@@ -24,10 +24,15 @@ public class MessageReceiver {
         DeliverCallback deliverCallback = (consumerTag, delivery) -> {
             String message = new String(delivery.getBody(), "UTF-8");
             System.out.println("[x] Received '" + message + "'");
+            if (message.equals("Exit")) {
+                System.out.println("Connection close !");
+                connection.close();
+            }
         };
         // Keep the consumer running to listen for messages
         // 持续监听消息队列中可以消费的消息，使用回调方法进行处理
         channel.basicConsume(QUEUE_NAME, true, deliverCallback, consumerTag -> {
         });
+
     }
 }
