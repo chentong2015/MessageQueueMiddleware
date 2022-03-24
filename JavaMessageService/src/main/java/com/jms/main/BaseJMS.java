@@ -1,4 +1,4 @@
-package main;
+package com.jms.main;
 
 // Java Message Service
 // 一种中间件标准，JMS在特定的API接口层面和实现行为上进行了统一
