@@ -1,8 +1,21 @@
-# MessageQueueMiddleware
+### 消息中间件基础
 
-该项目介绍消息中间件基础
-1. Apache ActiveMQ
-2. Apache Kafka
-3. Apache RocketMQ
-4. JMS(Java Message Service)
-5. RabbitMQ
+1. Client端有没有并发问题，如何测试 ?
+2. Client端消费一个message queue中的信息是否是并行的，是否应用开启新的线程来消费信息 ?
+3. 如果一个message queue中有多个client，如何消费信息 ?
+4. 是否能够发送大量的数据 GB，client端接收的逻辑是什么 ?
+
+### 消息中间件相关问题:
+
+1. 消息队列的同步和异步技术
+2. 消息队列用到什么场景(削峰，限流，异步)
+3. 消息送达确认是怎么实现的?
+4. kafka如何证数据不丢失，确保消息不会重复消费?
+
+### 分布式场景下，同步多个JVM实例级别的缓存:
+
+1. 如何解决消息的一致性 ?
+2. 消息中间件如何解决消息丢失问题 ？
+3. 描述一个服务从发布到被消费的详细过程 ？
+
+消息中间件基本设计 https://mikechen.cc/7319.html
