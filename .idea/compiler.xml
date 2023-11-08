@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="JavaMessageService" />
         <module name="RabbitMQ" />
-        <module name="ApacheKafKa" />
+        <module name="ApacheKafka" />
         <module name="ApacheRocketMQ" />
         <module name="ApacheActiveMQ" />
       </profile>

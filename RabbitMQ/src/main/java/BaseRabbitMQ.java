@@ -1,5 +1,3 @@
-package main;
-
 // RabbitMQ is an AMQP server, message broker消息代理
 // 高级消息队列协议(Advanced Message Queuing Protocol)是面向消息中间件提供的开放的应用层协议，
 // 1. 对于消息的排序、路由(包括点对点和订阅-发布)、保持可靠性、保证安全性
@@ -14,5 +12,5 @@ package main;
 // https://www.rabbitmq.com/getstarted.html
 // https://github.com/rabbitmq/rabbitmq-tutorials
 public class BaseRabbitMQ {
-    
+
 }
