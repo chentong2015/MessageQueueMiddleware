@@ -8,12 +8,12 @@
     <artifactId>MessageQueueMiddleware</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
     <modules>
-        <module>ApacheActiveMQ</module>
-        <module>ApacheKafKa</module>
-        <module>ApacheRocketMQ</module>
-        <module>JavaMessageService</module>
-        <module>RabbitMQ</module>
+        <module>java-message-service</module>
+        <module>kafka-messaging</module>
+        <module>rabbit-mq</module>
+        <module>java-message-service-spring</module>
     </modules>
 
     <properties>

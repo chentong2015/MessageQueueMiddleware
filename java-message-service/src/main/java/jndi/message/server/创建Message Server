@@ -1,0 +1,5 @@
+TODO. GlassFish3 server creates two JNDI.
+- Create connection factory named "myQueueConnectionFactory"
+- Create destination resource named "myQueue"
+
+After creating JNDI, create server and receiver application. Run them in different console.
