@@ -1,0 +1,14 @@
+
+c
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(Üì“ûÿÿÿÿ
+T
+java:S1135
+"2Complete the task associated to this TODO comment.(¡Å¥öüÿÿÿÿ8±×“÷¼1
+_
+java:S1854"DRemove this useless assignment to local variable "destinationTopic".(îÉğÚùÿÿÿÿ
+Å
+java:S5301"®Secure this "ActiveMQConnectionFactory" by whitelisting the trusted packages using the "setTrustedPackages" method and make sure the "setTrustAllPackages" is not set to true.(¦ûÇĞ
+P
+java:S1481"5Remove this unused "destinationTopic" local variable.(îÉğÚùÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(ıµğùÿÿÿÿ
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(ûµ¹Úùÿÿÿÿ8Êµğö¼1

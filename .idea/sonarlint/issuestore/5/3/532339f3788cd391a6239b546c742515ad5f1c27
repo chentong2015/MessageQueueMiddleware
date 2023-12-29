@@ -1,0 +1,10 @@
+
+g
+java:S2095"JUse try-with-resources or close this "QueueSession" in a "finally" clause.(éîğ¦8óÖ©ö¼1
+o
+java:S2095"MUse try-with-resources or close this "QueueConnection" in a "finally" clause.(†ü˜×ûÿÿÿÿ8óÖ©ö¼1
+m
+java:S2095"KUse try-with-resources or close this "QueueReceiver" in a "finally" clause.(³‡Œÿÿÿÿÿ8óÖ©ö¼1
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8óÖ©ö¼1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ëâëÂúÿÿÿÿ8øÖ©ö¼1

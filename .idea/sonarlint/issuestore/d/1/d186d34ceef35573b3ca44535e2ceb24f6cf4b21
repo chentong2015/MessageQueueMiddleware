@@ -1,0 +1,6 @@
+
+j
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(Üì“ûÿÿÿÿ8‚ŸŒ÷¼1
+Ì
+java:S5301"®Secure this "ActiveMQConnectionFactory" by whitelisting the trusted packages using the "setTrustedPackages" method and make sure the "setTrustAllPackages" is not set to true.(Äˆùü8ˆŸŒ÷¼1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‚”ÅÚ8‰ŸŒ÷¼1
