@@ -1,0 +1,10 @@
+Kafka: Event Streaming 事件驱动流
+1. 高吞吐量：Kafka也可以支持每秒数百万的消息
+2. 严格的顺序机制，不支持消息优先级，不支持标准的消息协议
+3. 应用在大数据日志处理，对实时性(少量延迟)和可靠性(少量数据丢失)要求较低的场景中
+
+Kafka设计思想：
+https://kafka.apache.org/intro
+https://kafka.apache.org/documentation/
+https://github.com/apache/kafka/blob/trunk/examples
+

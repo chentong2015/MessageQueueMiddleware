@@ -7,7 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rabbit-mq" />
-        <module name="kafka-messaging" />
+        <module name="kafka-event-streaming" />
         <module name="java-message-service-spring" />
         <module name="java-message-service" />
       </profile>

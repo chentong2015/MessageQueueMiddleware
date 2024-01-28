@@ -1,4 +1,4 @@
-package com.jms.api;
+package jms.api;
 
 import javax.jms.*;
 

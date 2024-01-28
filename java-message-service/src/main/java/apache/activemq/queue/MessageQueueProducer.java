@@ -1,13 +1,13 @@
-package apache.activemq.main.topic;
+package apache.activemq.queue;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
 import javax.jms.*;
 
-public class MessageTopicProducer {
+public class MessageQueueProducer {
 
     private static final String URL = "http://127.0.0.1:61616";
-    private static final String TOPIC_NAME = "topic name";
+    private static final String QUEUE_NAME = "queue-test";
 
     public static void main(String[] args) throws JMSException {
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(URL);
@@ -16,7 +16,7 @@ public class MessageTopicProducer {
 
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-        Destination destination = session.createTopic(TOPIC_NAME);
+        Destination destination = session.createQueue(QUEUE_NAME);
         MessageProducer producer = session.createProducer(destination);
 
         for (int i = 0; i < 100; i++) {

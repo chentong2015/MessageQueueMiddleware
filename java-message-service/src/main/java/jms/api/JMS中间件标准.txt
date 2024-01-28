@@ -9,6 +9,6 @@ Why JMS: 区别RMI
 3. Reliable: JMS保证消息只会被deliver一次
 
 JMS使用场景:
-适用任何事件驱动的APP(event-based application), 例如聊天服务器(在client和server之间发送event)
+适用任何(Event Based)事件驱动的APP, 例如聊天服务器(在client和server之间发送event)
 
 https://docs.oracle.com/javaee/6/tutorial/doc/bncdx.html

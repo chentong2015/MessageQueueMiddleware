@@ -1,4 +1,4 @@
-package apache.activemq.main.topic;
+package apache.activemq.topic;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
