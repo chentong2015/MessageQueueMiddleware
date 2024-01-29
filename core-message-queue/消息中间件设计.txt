@@ -5,3 +5,6 @@
 4. 如何减少消息在发送过程中的丢失 ？Broker存储的数据需要备份
 5. 如何确保消费不会被重复消费 ？Message会带有flag进行追踪
 6. 消息队列用应用场景 ？削峰，限流，异步
+
+消息服务设计:
+Building a scalable messaging service to send notification to millions of users
