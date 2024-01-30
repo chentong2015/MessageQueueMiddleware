@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class DemoKafkaConsumerProducer {
 
-    public static final String TOPIC_NAME = "my-topic";
+    public static final String TOPIC_NAME = "my-topic-1";
     public static final String GROUP_NAME = "my-group";
 
     // TODO. 创建的Consumer和Producer都是异步线程，不会阻塞主线程

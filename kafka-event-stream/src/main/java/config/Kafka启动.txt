@@ -1,0 +1,34 @@
+$ tar -xzf kafka_2.13-3.6.1.tgz
+$ cd kafka_2.13-3.6.1
+
+$ bin/zookeeper-server-start.sh config/zookeeper.properties
+$ bin/kafka-server-start.sh config/server.properties
+
+在指定的broker中创建Topic主题
+$ bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --topic quickstart-events
+
+查看主题的详细信息
+$ bin/kafka-topics.sh --describe --bootstrap-server localhost:9092 --topic quickstart-events
+
+显示所有主题
+$ bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+在主题中写入events并且消费
+$ bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic quickstart-events
+  This is my first event
+  This is my second event
+  Ctrl-C
+$ bin/kafka-console-consumer.sh --from-beginning --bootstrap-server localhost:9092 --topic quickstart-events
+
+TODO. Kafka启动异常问题
+1. kafka文件路径问题
+   Kafka的启动路径中不能包含空格
+
+2. Broker启动异常
+   ERROR Exiting Kafka due to fatal exception during startup. (kafka.Kafka$)
+    org.apache.zookeeper.KeeperException$NodeExistsException: KeeperErrorCode = NodeExists
+   INFO [KafkaServer id=0] shutting down (kafka.server.KafkaServer)
+
+   broker.id=0
+   log.dirs=/tmp/kafka-logs
+   broker.id和log.dir完全对应，同一个id不能启动多次，可更新id与log位置

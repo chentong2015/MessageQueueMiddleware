@@ -5,9 +5,11 @@ $ bin/kafka-topics.sh --create --topic kafka_streams-wordcount-output --bootstra
   --config cleanup.policy=compact \
 $ bin/kafka-topics.sh --describe --bootstrap-server localhost:9092
 
-TODO. 必须添加jar包到系统CLASSPATH路径, 使用全路径启动Steams应用程序
- export CLASSPATH="$CLASSPATH":"/../kafka3.6.1/jar/WordCount.jar"
-$ bin/kafka-run-class.sh kafka_streams.WordCountDemo
+TODO. 两种启动方式
+1. 直接使用IDEA启动要测试的Main方法，并传递Arguments参数
+2. 使用kafka脚本启动，将项目jar包添加到CLASSPATH, 使用全路径启动
+   export CLASSPATH="$CLASSPATH":"/../kafka3.6.1/jar/WordCount.jar"
+   $ bin/kafka-run-class.sh kafka_streams.WordCountDemo
 
 > bin/kafka-console-producer.sh --bootstrap-server localhost:9092 --topic kafka_streams-plaintext-input
   all kafka_streams lead to kafka
@@ -17,5 +19,5 @@ TODO. 必须指定格式(解码器)以及内容的输出
   --formatter kafka.tools.DefaultMessageFormatter
   --property print.key=true
   --property print.value=true
-   --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
-   --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
+  --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+  --property value.deserializer=org.apache.kafka.common.serialization.LongDeserializer
