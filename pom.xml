@@ -7,18 +7,13 @@
     <groupId>org.example</groupId>
     <artifactId>MessageQueueMiddleware</artifactId>
     <packaging>pom</packaging>
+
     <version>1.0-SNAPSHOT</version>
 
     <modules>
         <module>java-message-service</module>
         <module>java-message-service-spring</module>
-        <module>kafka-event-streaming</module>
-        <module>rabbit-mq</module>
+        <module>rabbit-message-queue</module>
+        <module>kafka-event-stream</module>
     </modules>
-
-    <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-    </properties>
-
 </project>
