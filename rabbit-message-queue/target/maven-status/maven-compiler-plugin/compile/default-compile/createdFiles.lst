@@ -1,6 +1,0 @@
-main/spring_messaging/config/SpringMessagingConfig.class
-main/spring_messaging/RabbitMqApplication.class
-main/spring_messaging/components/MessageReceiver.class
-main/exchange_pattern/MessageReceiver.class
-main/spring_messaging/controller/SenderController.class
-main/exchange_pattern/MessageSender.class
