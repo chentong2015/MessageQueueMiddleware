@@ -1,8 +1,10 @@
 $ bin/kafka-topics.sh --create --topic kafka_streams-plaintext-input --bootstrap-server localhost:9092
+
 $ bin/kafka-topics.sh --create --topic kafka_streams-wordcount-output --bootstrap-server localhost:9092
   --replication-factor 1 \
   --partitions 1 \
   --config cleanup.policy=compact \
+
 $ bin/kafka-topics.sh --describe --bootstrap-server localhost:9092
 
 TODO. 两种启动方式

@@ -6,6 +6,7 @@
 5. 如何确保消息不会被重复消费 ？flag标记追踪
 6. 消息队列用应用场景 ？削峰，限流，异步
 
-消息服务设计:
+EDA Streaming 项目设计:
 Building a scalable messaging service to send notification to millions of users.
 Building distributed data processing streams of events.
+Event-driven architecture using Kafka and APIs for real-time data processing.

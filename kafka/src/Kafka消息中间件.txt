@@ -1,0 +1,24 @@
+Kafka: Event Streaming 事件驱动流
+1. 高吞吐量：Kafka也可以支持每秒数百万的消息
+2. 严格的顺序机制，不支持消息优先级，不支持标准的消息协议
+3. 应用在大数据日志处理，对实时性(少量延迟)和可靠性(少量数据丢失)要求较低的场景中
+
+Kafka设计思想:
+- Event：key, value, timestamp, metadata(optional)
+- Topics: set of events
+1. Events in a topic can be read as often as needed
+   事件默认支持多次读取，通过配置topic来设置保存时间
+2. Topics are partitioned(number of "buckets"), located on different Kafka brokers.
+   所有的主题是分区的，存储在不同的Broker中，并且所有数据都有备份
+
+Kafka应用场景:
+- Messaging
+- Website Activity Tracking
+- Metrics
+- Log Aggregation
+- Stream Processing
+- Event Sourcing
+- Commit Log
+
+https://kafka.apache.org/documentation/
+https://kafka.apache.org/36/documentation/kafka_streams/

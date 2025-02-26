@@ -13,7 +13,7 @@
     <modules>
         <module>java-message-service</module>
         <module>java-message-service-spring</module>
-        <module>rabbit-message-queue</module>
-        <module>kafka-event-stream</module>
+        <module>kafka</module>
+        <module>rabbitmq</module>
     </modules>
 </project>
