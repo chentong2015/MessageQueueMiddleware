@@ -7,4 +7,5 @@
 6. 消息队列用应用场景 ？削峰，限流，异步
 
 消息服务设计:
-Building a scalable messaging service to send notification to millions of users
+Building a scalable messaging service to send notification to millions of users.
+Building distributed data processing streams of events.
