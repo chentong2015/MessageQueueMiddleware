@@ -1,0 +1,14 @@
+JMS is an API: 提供一种Messaging中间件标准
+1. JMS provides the facility to create, send and read messages.
+2. JMS provides a common interface for standard message protocols and message services
+3. JMS helps in building the communication between two or more applications
+
+Why JMS: 区别RMI
+1. 减低系统的耦合性，进行messaging的APP之间并不需要存在依赖关系
+2. Asynchronous: 消息的发布者并不需要消息的接收者存在时才发送信息，消息的接受者会自动fetch message
+3. Reliable: JMS保证消息只会被deliver一次
+
+JMS使用场景:
+适用任何(Event Based)事件驱动的APP, 例如聊天服务器(在client和server之间发送event)
+
+https://docs.oracle.com/javaee/6/tutorial/doc/bncdx.html

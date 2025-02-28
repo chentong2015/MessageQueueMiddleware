@@ -11,7 +11,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>java-message-service</module>
+        <module>java-message-service-activemq</module>
         <module>java-message-service-spring</module>
         <module>kafka</module>
         <module>rabbitmq</module>
