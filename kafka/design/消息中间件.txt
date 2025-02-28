@@ -6,11 +6,11 @@ Kafka: Event Streaming 事件驱动流
 Kafka应用场景:
 - Messaging
 - Website Activity Tracking
-- Metrics
 - Log Aggregation
 - Stream Processing
 - Event Sourcing
 - Commit Log
+- Metrics
 
 https://kafka.apache.org/documentation/
 https://kafka.apache.org/36/documentation/kafka_streams/

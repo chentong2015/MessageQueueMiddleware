@@ -1,7 +1,0 @@
-Topics: set of events
-Topics are partitioned(number of "buckets"), located on different Kafka brokers.
-主题是一类事件的集合，分区存储在不同的Broker中并备份
-
-Event：key, value, timestamp, metadata(optional)
-Events in a topic can be read as often as needed
-事件默认支持多次读取，通过配置topic来设置保存时间

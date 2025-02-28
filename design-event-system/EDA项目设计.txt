@@ -1,0 +1,5 @@
+1. Building distributed real-time data processing streams of events.
+2. Building a scalable messaging service to send notification to millions of users.
+
+聊天系统设计，Message实时传递和接收
+CHAPTER 12: DESIGN A CHAT SYSTEM
